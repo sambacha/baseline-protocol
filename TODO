@@ -1,7 +1,15 @@
-- configure `postinstall.js` script to generate types on-the-fly
-
-- finish src/modules types
-
-- package modules as exports proper
-
-- configure external provider services
+  - index.md
+  - FUNCTION.md
+  - REGISTRY.md
+  - _privacy.md
+  - _registry.md
+  - privacy/IShield.md
+  - privacy/IVerifier.md
+  - privacy/Shield.md
+  - privacy/lib/MerkleTreeSHA256.md
+  - privacy/lib/VerifierNoop.md
+  - registry/IOrgRegistry.md
+  - registry/OrgRegistry.md
+  - registry/Registrar.md
+  - registry/lib/ERC165Compatible.md
+  - registry/lib/ERC1820Registry.md
