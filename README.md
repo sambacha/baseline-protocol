@@ -6,6 +6,12 @@ Baseline core contracts package.
 
 `npm install @baseline-protocol/contracts`
 
+## Overview 
+
+ <img src="/docs/contracts.svg" 
+      alt="Baseline Protocol Contracts UML" 
+      srcset="/docs/contracts.svg"
+      sizes="(max-width: 600px) 600px">
 
 ## Organization Registry
 
