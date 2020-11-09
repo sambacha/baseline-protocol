@@ -1,0 +1,39 @@
+{
+	"name": "@baseline-protocol/contracts",
+	"version": "1.0.0",
+	"description": "Baseline core contracts package.",
+	"main": "src/abi.js",
+	"files": [
+		"IShield.sol",
+		"IVerifier.sol",
+		"Shield.sol",
+		"MerkleTreeSHA256.sol",
+		"VerifierNoop.sol",
+		"IOrgRegistry.sol",
+		"OrgRegistry.sol",
+		"Registrar.sol",
+		"ERC165Compatible.sol",
+		"ERC1820Registry.sol"
+	],
+	"directories": {
+		"contracts": "contracts",
+		"test": "test"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"@openzeppelin/contracts": "^3.1.0"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "CC-0",
+	"devDependencies": {
+		"@truffle/artifactor": "^4.0.85",
+		"@typechain/ethers-v5": "^3.0.0",
+		"@typechain/truffle-v5": "^3.0.0",
+		"@typechain/web3-v1": "^1.0.0",
+		"truffle": "^5.1.52",
+		"typechain": "^4.0.0"
+	}
+}
