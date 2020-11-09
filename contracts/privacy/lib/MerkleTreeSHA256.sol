@@ -2,17 +2,15 @@
 
 /**
  * A base contract which handles Merkle Tree inserts (and consequent updates to the root and 'frontier' (see below)).
- * The intention is for other 'derived' contracts to import this contract, and for those derived contracts to manage 
+ * The intention is for other 'derived' contracts to import this contract, and for those derived contracts to manage
  * permissions to actually call the insertLeaf/insertleaves functions of this base contract.
- * 
+ *
  * credit: https://github.com/EYBlockchain/timber
-**/
+ **/
 
 pragma solidity ^0.6.9;
 
-
 contract MerkleTreeSHA256 {
-
     /**
       @notice Explanation of the Merkle Tree in this contract:
       This is an append-only merkle tree; populated from left to right.
@@ -44,14 +42,14 @@ contract MerkleTreeSHA256 {
     */
 
     // These events are what the merkle-tree microservice's filters will listen for.
-    event NewLeaf(uint leafIndex, bytes32 leafValue, bytes32 root);
-    event NewLeaves(uint minLeafIndex, bytes32[] leafValues, bytes32 root);
- 
-    // for debugging only
-    event Output(bytes27 leftInput, bytes27 rightInput, bytes32 output, uint nodeIndex);
+    event NewLeaf(uint256 leafIndex, bytes32 leafValue, bytes32 root);
+    event NewLeaves(uint256 minLeafIndex, bytes32[] leafValues, bytes32 root);
 
-    uint public treeHeight;
-    uint public treeWidth;
+    // for debugging only
+    event Output(bytes27 leftInput, bytes27 rightInput, bytes32 output, uint256 nodeIndex);
+
+    uint256 public treeHeight;
+    uint256 public treeWidth;
     bytes32 public latestRoot;
     uint256 public leafCount; // the number of leaves currently in the tree
 
@@ -65,13 +63,13 @@ contract MerkleTreeSHA256 {
     If in future you want to change the truncation values, search for '27', '40' and '0x36'.
     */
     bytes27 public zero = 0x000000000000000000000000000000000000000000000000000000;
-  
-    // the right-most 'frontier' of nodes required to calculate the new root when the next new leaf value is added.
-    bytes27[33] public frontier; 
 
-    constructor(uint _treeHeight) internal {
+    // the right-most 'frontier' of nodes required to calculate the new root when the next new leaf value is added.
+    bytes27[33] public frontier;
+
+    constructor(uint256 _treeHeight) internal {
         treeHeight = _treeHeight;
-        treeWidth = 2 ** treeHeight;
+        treeWidth = 2**treeHeight;
     }
 
     /**
@@ -79,12 +77,12 @@ contract MerkleTreeSHA256 {
     nodeValue (based on the leafIndex currently being inserted). See the top-level README for a detailed explanation.
     @return slot uint - is the index of the frontier (or 'storage slot') into which we will next store a nodeValue
     */
-    function getFrontierSlot(uint leafIndex) private pure returns (uint slot) {
+    function getFrontierSlot(uint256 leafIndex) private pure returns (uint256 slot) {
         slot = 0;
         if (leafIndex % 2 == 1) {
-            uint exp1 = 1;
-            uint pow1 = 2;
-            uint pow2 = pow1 << 1;
+            uint256 exp1 = 1;
+            uint256 pow1 = 2;
+            uint256 pow2 = pow1 << 1;
             while (slot == 0) {
                 if ((leafIndex + 1 - pow1) % pow2 == 0) {
                     slot = exp1;
@@ -103,23 +101,21 @@ contract MerkleTreeSHA256 {
     @return root bytes32 - the root of the merkle tree, after the insert.
     */
     function insertLeaf(bytes32 leafValue) internal returns (bytes32) {
-
         // check that space exists in the tree:
         require(treeWidth > leafCount, "There is no space left in the tree.");
 
-        uint slot = getFrontierSlot(leafCount);
-        uint nodeIndex = leafCount + treeWidth - 1;
+        uint256 slot = getFrontierSlot(leafCount);
+        uint256 nodeIndex = leafCount + treeWidth - 1;
 
         // nodeValue is the hash, which iteratively gets overridden to the top of the tree until it becomes the root.
-        bytes27 nodeValue = bytes27(leafValue << 40); 
+        bytes27 nodeValue = bytes27(leafValue << 40);
 
         bytes27 leftInput;
         bytes27 rightInput;
         bytes32[1] memory output; // output of the hash function
         bool success;
 
-        for (uint level = 0; level < treeHeight; level++) {
-
+        for (uint256 level = 0; level < treeHeight; level++) {
             if (level == slot) frontier[slot] = nodeValue;
 
             if (nodeIndex % 2 == 0) {
@@ -150,7 +146,10 @@ contract MerkleTreeSHA256 {
                     mstore(add(input, 0x1b), rightInput) // push second input at position 27bytes = 0x1b
                     success := staticcall(not(0), 2, input, 0x36, output, 0x20)
                     // Use "invalid" to make gas estimation work
-                    switch success case 0 { invalid() }
+                    switch success
+                        case 0 {
+                            invalid()
+                        }
                 }
 
                 nodeValue = bytes27(output[0] << 40); // the parentValue, but will become the nodeValue of the next level
@@ -170,7 +169,10 @@ contract MerkleTreeSHA256 {
                     mstore(add(input, 0x1b), rightInput) // push second input at position 27bytes = 0x1b
                     success := staticcall(not(0), 2, input, 0x36, output, 0x20)
                     // Use "invalid" to make gas estimation work
-                    switch success case 0 { invalid() }
+                    switch success
+                        case 0 {
+                            invalid()
+                        }
                 }
 
                 nodeValue = bytes27(output[0] << 40); // the parentValue, but will become the nodeValue of the next level
@@ -195,14 +197,14 @@ contract MerkleTreeSHA256 {
     @return root - the root of the merkle tree, after all the inserts.
     */
     function insertLeaves(bytes32[] memory leafValues) internal returns (bytes32) {
-        uint numberOfLeaves = leafValues.length;
+        uint256 numberOfLeaves = leafValues.length;
 
         // check that space exists in the tree:
         require(treeWidth >= leafCount + numberOfLeaves, "There is not enough space left in the tree.");
         if (numberOfLeaves > treeWidth - leafCount) {
-            uint numberOfExcessLeaves = numberOfLeaves - (treeWidth - leafCount);
+            uint256 numberOfExcessLeaves = numberOfLeaves - (treeWidth - leafCount);
             // remove the excess leaves, because we only want to emit those we've added as an event:
-            for (uint xs = 0; xs < numberOfExcessLeaves; xs++) {
+            for (uint256 xs = 0; xs < numberOfExcessLeaves; xs++) {
                 /**
                   CAUTION!!! This attempts to succinctly achieve leafValues.pop() on a **memory** dynamic array. Not thoroughly tested!
                   Credit: https://ethereum.stackexchange.com/a/51897/45916
@@ -214,8 +216,8 @@ contract MerkleTreeSHA256 {
             numberOfLeaves = treeWidth - leafCount;
         }
 
-        uint slot;
-        uint nodeIndex;
+        uint256 slot;
+        uint256 nodeIndex;
         bytes27 nodeValue;
 
         bytes27 leftInput;
@@ -224,7 +226,7 @@ contract MerkleTreeSHA256 {
         bool success;
 
         // consider each new leaf in turn, from left to right:
-        for (uint leafIndex = leafCount; leafIndex < leafCount + numberOfLeaves; leafIndex++) {
+        for (uint256 leafIndex = leafCount; leafIndex < leafCount + numberOfLeaves; leafIndex++) {
             nodeValue = bytes27(leafValues[leafIndex - leafCount] << 40);
             nodeIndex = leafIndex + treeWidth - 1; // convert the leafIndex to a nodeIndex
 
@@ -236,7 +238,7 @@ contract MerkleTreeSHA256 {
             }
 
             // hash up to the level whose nodeValue we'll store in the frontier slot:
-            for (uint level = 1; level <= slot; level++) {
+            for (uint256 level = 1; level <= slot; level++) {
                 if (nodeIndex % 2 == 0) {
                     // even nodeIndex
                     leftInput = frontier[level - 1];
@@ -250,7 +252,10 @@ contract MerkleTreeSHA256 {
                         mstore(add(input, 0x1b), rightInput) // push second input at position 27bytes = 0x1b
                         success := staticcall(not(0), 2, input, 0x36, output, 0x20)
                         // Use "invalid" to make gas estimation work
-                        switch success case 0 { invalid() }
+                        switch success
+                            case 0 {
+                                invalid()
+                            }
                     }
 
                     // emit Output(leftInput, rightInput, output[0], level, nodeIndex); // for debugging only
@@ -269,7 +274,10 @@ contract MerkleTreeSHA256 {
                         mstore(add(input, 0x1b), rightInput) // push second input at position 27bytes = 0x1b
                         success := staticcall(not(0), 2, input, 0x36, output, 0x20)
                         // Use "invalid" to make gas estimation work
-                        switch success case 0 { invalid() }
+                        switch success
+                            case 0 {
+                                invalid()
+                            }
                     }
 
                     // emit Output(leftInput, rightInput, output[0], level, nodeIndex); // for debugging only
@@ -282,8 +290,7 @@ contract MerkleTreeSHA256 {
         }
 
         // So far we've added all leaves, and hashed up to a particular level of the tree. We now need to continue hashing from that level until the root:
-        for (uint level = slot + 1; level <= treeHeight; level++) {
-
+        for (uint256 level = slot + 1; level <= treeHeight; level++) {
             if (nodeIndex % 2 == 0) {
                 // even nodeIndex
                 leftInput = frontier[level - 1];
@@ -296,13 +303,16 @@ contract MerkleTreeSHA256 {
                     mstore(add(input, 0x1b), rightInput) // push second input at position 27bytes = 0x1b
                     success := staticcall(not(0), 2, input, 0x36, output, 0x20)
                     // Use "invalid" to make gas estimation work
-                    switch success case 0 { invalid() }
+                    switch success
+                        case 0 {
+                            invalid()
+                        }
                 }
 
                 // emit Output(leftInput, rightInput, output[0], level, nodeIndex); // for debugging only
 
                 nodeValue = bytes27(output[0] << 40); // the parentValue, but will become the nodeValue of the next level
-                nodeIndex = (nodeIndex - 1) / 2;  // the parentIndex, but will become the nodeIndex of the next level
+                nodeIndex = (nodeIndex - 1) / 2; // the parentIndex, but will become the nodeIndex of the next level
             } else {
                 // odd nodeIndex
                 leftInput = nodeValue;
@@ -315,13 +325,16 @@ contract MerkleTreeSHA256 {
                     mstore(add(input, 0x1b), rightInput) // push second input at position 27bytes = 0x1b
                     success := staticcall(not(0), 2, input, 0x36, output, 0x20)
                     // Use "invalid" to make gas estimation work
-                    switch success case 0 { invalid() }
+                    switch success
+                        case 0 {
+                            invalid()
+                        }
                 }
 
                 // emit Output(leftInput, rightInput, output[0], level, nodeIndex); // for debugging only
 
                 nodeValue = bytes27(output[0] << 40); // the parentValue, but will become the nodeValue of the next level
-                nodeIndex = nodeIndex / 2;  // the parentIndex, but will become the nodeIndex of the next level
+                nodeIndex = nodeIndex / 2; // the parentIndex, but will become the nodeIndex of the next level
             }
         }
 

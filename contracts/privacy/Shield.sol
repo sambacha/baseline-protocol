@@ -10,12 +10,12 @@ contract Shield is IShield, MerkleTreeSHA256 {
     IVerifier private verifier; // the verification smart contract
 
     // FUNCTIONS:
-    constructor(address _verifier, uint _treeHeight) public MerkleTreeSHA256(_treeHeight) {
+    constructor(address _verifier, uint256 _treeHeight) public MerkleTreeSHA256(_treeHeight) {
         verifier = IVerifier(_verifier);
     }
 
     // returns the verifier contract address that this shield contract uses for proof verification
-    function getVerifier() external override view returns (address) {
+    function getVerifier() external view override returns (address) {
         return address(verifier);
     }
 
@@ -24,7 +24,6 @@ contract Shield is IShield, MerkleTreeSHA256 {
         uint256[] calldata _publicInputs,
         bytes32 _newCommitment
     ) external override returns (bool) {
-
         // verify the proof
         bool result = verifier.verify(_proof, _publicInputs);
         require(result, "The proof failed verification in the verifier contract");
@@ -33,5 +32,4 @@ contract Shield is IShield, MerkleTreeSHA256 {
         insertLeaf(_newCommitment); // recalculate the root of the merkleTree as it's now different
         return true;
     }
-
 }

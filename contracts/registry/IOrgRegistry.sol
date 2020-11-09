@@ -21,14 +21,17 @@ interface IOrgRegistry {
         bytes calldata
     ) external returns (bool);
 
-    function getOrgCount() external view returns (uint);
+    function getOrgCount() external view returns (uint256);
 
-    function getOrg(address) external view returns (
-        address,
-        bytes32,
-        bytes memory,
-        bytes memory,
-        bytes memory,
-        bytes memory
-    );
+    function getOrg(address)
+        external
+        view
+        returns (
+            address,
+            bytes32,
+            bytes memory,
+            bytes memory,
+            bytes memory,
+            bytes memory
+        );
 }
