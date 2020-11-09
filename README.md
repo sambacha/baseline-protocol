@@ -109,7 +109,6 @@ src/
 
 ### OrgRegistry
 
-
 ```javascript
 const build/contracts/OrgRegistry.json = require('./src/modules/OrgRegistry/index.js')
 let OrgRegistry = new build/contracts/OrgRegistry.json()

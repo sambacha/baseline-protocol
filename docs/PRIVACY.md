@@ -5,11 +5,13 @@
 #### `getVerifier() → address` (external)
 
 #### `verifyAndPush(uint256[] proof, uint256[] publicInputs, bytes32 commitment) → bool` (external)
+
 ## `IVerifier`
 
 Example Verifier Implementation
 
 #### `verify(uint256[] proof, uint256[] publicInputs) → bool result` (external)
+
 ## `Shield`
 
 #### `constructor(address _verifier, uint256 _treeHeight)` (public)
@@ -17,6 +19,7 @@ Example Verifier Implementation
 #### `getVerifier() → address` (external)
 
 #### `verifyAndPush(uint256[] _proof, uint256[] _publicInputs, bytes32 _newCommitment) → bool` (external)
+
 ## `MerkleTreeSHA256`
 
 #### `constructor(uint256 _treeHeight)` (internal)
@@ -58,6 +61,7 @@ w = width = 2 ** height = 2^4 = 16
 #### `NewLeaves(uint256 minLeafIndex, bytes32[] leafValues, bytes32 root)`
 
 #### `Output(bytes27 leftInput, bytes27 rightInput, bytes32 output, uint256 nodeIndex)`
+
 ## `VerifierNoop`
 
 #### `verify(uint256[] _proof, uint256[] _publicInputs) → bool result` (external)
