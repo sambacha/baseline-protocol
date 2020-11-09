@@ -44,13 +44,13 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.9+commit.3e3065ac\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getVerifier\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256[]\",\"name\":\"proof\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"publicInputs\",\"type\":\"uint256[]\"},{\"internalType\":\"bytes32\",\"name\":\"commitment\",\"type\":\"bytes32\"}],\"name\":\"verifyAndPush\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/privacy/IShield.sol\":\"IShield\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/privacy/IShield.sol\":{\"keccak256\":\"0x969add7bf464cfbca9791cbad9b4745fff556d6f8f7fbe573e2cae5d2f73a4e2\",\"license\":\"CC0\",\"urls\":[\"bzz-raw://49afdd63b89e55eb09238639fb2f09291b74b6617b35f017e55d90072a4d4896\",\"dweb:/ipfs/QmXzsAMjivakjfsCyK9xV2aek8uzJoP3SfvxqTAkggnxSN\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.9+commit.3e3065ac\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getVerifier\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256[]\",\"name\":\"proof\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"publicInputs\",\"type\":\"uint256[]\"},{\"internalType\":\"bytes32\",\"name\":\"commitment\",\"type\":\"bytes32\"}],\"name\":\"verifyAndPush\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/privacy/IShield.sol\":\"IShield\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/privacy/IShield.sol\":{\"keccak256\":\"0xc7bca3cd7a9dd0ced80acb4b5508c641263792242bf3e86c45b92bbd71f1e96d\",\"license\":\"CC0\",\"urls\":[\"bzz-raw://72986738dbacf98910d517745f2c68aa3aaba068e5a5e673038586b89efd3fee\",\"dweb:/ipfs/QmZKQJJacbPwhpd7VzNkWZwtpdS4MCLG3fupjSMLpJ3MRV\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: CC0\npragma solidity ^0.6.9;\n\ninterface IShield {\n    function getVerifier() external view returns (address);\n\n    function verifyAndPush(\n        uint256[] calldata proof,\n        uint256[] calldata publicInputs,\n        bytes32 commitment\n    ) external returns (bool);\n}\n",
+  "source": "// SPDX-License-Identifier: CC0\npragma solidity ^0.6.9;\n\ninterface IShield {\n\n    function getVerifier() external view returns (address);\n    function verifyAndPush(\n        uint256[] calldata proof,\n        uint256[] calldata publicInputs,\n        bytes32 commitment\n    ) external returns (bool);\n\n}\n",
   "sourcePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/privacy/IShield.sol",
   "ast": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/privacy/IShield.sol",
@@ -94,7 +94,7 @@
               "id": 2,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "101:2:0"
+              "src": "102:2:0"
             },
             "returnParameters": {
               "id": 5,
@@ -108,7 +108,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 6,
-                  "src": "127:7:0",
+                  "src": "128:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -119,7 +119,7 @@
                     "id": 3,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "127:7:0",
+                    "src": "128:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -130,10 +130,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "126:9:0"
+              "src": "127:9:0"
             },
             "scope": 20,
-            "src": "81:55:0",
+            "src": "82:55:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -303,10 +303,10 @@
           }
         ],
         "scope": 21,
-        "src": "57:243:0"
+        "src": "57:244:0"
       }
     ],
-    "src": "32:269:0"
+    "src": "32:270:0"
   },
   "legacyAST": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/privacy/IShield.sol",
@@ -350,7 +350,7 @@
               "id": 2,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "101:2:0"
+              "src": "102:2:0"
             },
             "returnParameters": {
               "id": 5,
@@ -364,7 +364,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 6,
-                  "src": "127:7:0",
+                  "src": "128:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -375,7 +375,7 @@
                     "id": 3,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "127:7:0",
+                    "src": "128:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -386,10 +386,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "126:9:0"
+              "src": "127:9:0"
             },
             "scope": 20,
-            "src": "81:55:0",
+            "src": "82:55:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -559,18 +559,18 @@
           }
         ],
         "scope": 21,
-        "src": "57:243:0"
+        "src": "57:244:0"
       }
     ],
-    "src": "32:269:0"
+    "src": "32:270:0"
   },
   "compiler": {
     "name": "solc",
     "version": "0.6.9+commit.3e3065ac.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.2.2",
-  "updatedAt": "2020-11-09T11:17:31.073Z",
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2020-11-09T05:44:19.397Z",
   "devdoc": {
     "methods": {}
   },

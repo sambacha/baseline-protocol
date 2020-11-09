@@ -1366,8 +1366,8 @@
     "version": "0.6.9+commit.3e3065ac.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.2.2",
-  "updatedAt": "2020-11-09T11:17:31.133Z",
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2020-11-09T05:44:19.438Z",
   "devdoc": {
     "details": "Implementation of the {IERC165} interface. Contracts may inherit from this and call {_registerInterface} to declare their support of an interface.",
     "methods": {
