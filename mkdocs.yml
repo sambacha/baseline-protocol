@@ -1,0 +1,95 @@
+# Baseline Protocol Developer Documentation
+
+
+# Project information
+site_name: Baseline Protocol
+site_url: 
+site_description: Baseline Protocol Java Ethereum client documentation.
+site_author: Baseline Protocol community
+copyright: Baseline Protocol and its documentation are licensed under Apache 2.0 license /
+  This <a href="https://readthedocs.org/">Readthedocs.org</a> documentation is maintained by <a href="#">Baseline Protocol community</a>.
+
+#extra project info and template customisation
+extra:
+#  doc_site_edit_url: https://github.com/Baseline/Protocol-docs/
+  latest_version_warning:
+    url_contains: /latest/
+    text: 'You are reading Baseline Protocol development version documentation and
+    some displayed features may not be available in the stable release.
+    You can switch to stable version using the version box at screen bottom.'
+  support:
+    chat: 
+    email: 
+    website: 
+    issues:
+    doc_issues:
+  google:
+    site_verification: ''
+    tag_manager: ''
+  logo_regular: logo.svg
+  logo_reversed: &logo_reversed logo-reversed.svg
+
+# Repository
+repo_name: Baseline-Protocol 
+repo_url: https://github.com/sambacha/baseline-protocol/
+
+theme:
+    name: material
+# @dev - enable custom_dir for theme shadowing     
+#    custom_dir: custom_theme
+    palette:
+        primary: blue-grey
+        accent: teal
+    favicon: favicon.svg
+    logo: *logo_reversed
+
+nav:
+    - Overview: DOCS.md
+    - Privacy:
+            - Install Protocol: 
+                - Options: PRIVACY.md
+            - Privacy Protocol:
+                - Shield: ./shield/Shield.md
+    - Registry:
+            - Org Registry Protocol: ./registry/OrgRegistry.md
+            - Options: ./registry/Registrar.md
+            - Library: ./registry/lib/ERC165Compatible.md
+
+markdown_extensions:
+    - toc:
+        permalink: 
+        toc_depth: 3
+    - codehilite
+    - pymdownx.tabbed
+    - pymdownx.superfences
+    - markdown_include.include:
+        base_path: docs
+    - admonition
+    - footnotes
+    - def_list
+    - abbr
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.keys
+    - pymdownx.details
+    - pymdownx.emoji
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
+    - meta
+    - smarty
+
+plugins:
+    - search:
+        lang: 'en'
+        separator: '[\s]+'
+    - markdownextradata
+    - exclude:
+        glob:
+          - global/*
+    - git-revision-date-localized:
+        locale: en
