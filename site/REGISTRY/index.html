@@ -1,0 +1,899 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Baseline Protocol Java Ethereum client documentation.">
+      
+      
+      
+        <meta name="author" content="Baseline Protocol community">
+      
+      <link rel="shortcut icon" href="../favicon.svg">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.6">
+    
+    
+      
+        <title>REGISTRY - Baseline Protocol</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.63b94e9e.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.7f672a1f.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#546e7a">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue-grey" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#registrar" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Baseline Protocol" class="md-header-nav__button md-logo" aria-label="Baseline Protocol">
+      
+  <img src="../logo-reversed.svg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Baseline Protocol
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              REGISTRY
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/sambacha/baseline-protocol/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Baseline-Protocol
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Baseline Protocol" class="md-nav__button md-logo" aria-label="Baseline Protocol">
+      
+  <img src="../logo-reversed.svg" alt="logo">
+
+    </a>
+    Baseline Protocol
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/sambacha/baseline-protocol/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Baseline-Protocol
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../DOCS/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Privacy
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Privacy" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Privacy
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Install Protocol
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Install Protocol" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Install Protocol
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../PRIVACY/" title="Options" class="md-nav__link">
+      Options
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Privacy Protocol
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Privacy Protocol" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Privacy Protocol
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../shield/Shield.md" title="Shield" class="md-nav__link">
+      Shield
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Registry
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Registry" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Registry
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../registry/OrgRegistry/" title="Org Registry Protocol" class="md-nav__link">
+      Org Registry Protocol
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../registry/Registrar/" title="Options" class="md-nav__link">
+      Options
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../registry/lib/ERC165Compatible/" title="Library" class="md-nav__link">
+      Library
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#registrar" class="md-nav__link">
+    Registrar
+  </a>
+  
+    <nav class="md-nav" aria-label="Registrar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#onlymanager" class="md-nav__link">
+    onlyManager()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructoraddress-erc1820registryaddress-public" class="md-nav__link">
+    constructor(address ERC1820RegistryAddress) (public)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setinterfaceimplementationstring-_interfacelabel-address-_implementation-internal" class="md-nav__link">
+    setInterfaceImplementation(string _interfaceLabel, address _implementation) (internal)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaceaddraddress-addr-string-_interfacelabel-address-external" class="md-nav__link">
+    interfaceAddr(address addr, string _interfaceLabel) → address (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assignmanagementaddress-_newmanager-internal" class="md-nav__link">
+    assignManagement(address _newManager) (internal)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmanager-address-public" class="md-nav__link">
+    getManager() → address (public)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#orgregistry" class="md-nav__link">
+    OrgRegistry
+  </a>
+  
+    <nav class="md-nav" aria-label="OrgRegistry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructoraddress-_erc1820-public" class="md-nav__link">
+    constructor(address _erc1820) (public)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setinterfaces-bool-public" class="md-nav__link">
+    setInterfaces() → bool (public)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getinterfaces-bytes4-external" class="md-nav__link">
+    getInterfaces() → bytes4 (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#canimplementinterfaceforaddressbytes32-interfacehash-address-addr-bytes32-external" class="md-nav__link">
+    canImplementInterfaceForAddress(bytes32 interfaceHash, address addr) → bytes32 (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assignmanageraddress-_newmanager-external" class="md-nav__link">
+    assignManager(address _newManager) (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registerorgaddress-_address-bytes32-_name-bytes-_messagingendpoint-bytes-_whisperkey-bytes-_zkppublickey-bytes-_metadata-bool-external" class="md-nav__link">
+    registerOrg(address _address, bytes32 _name, bytes _messagingEndpoint, bytes _whisperKey, bytes _zkpPublicKey, bytes _metadata) → bool (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updateorgaddress-_address-bytes32-_name-bytes-_messagingendpoint-bytes-_whisperkey-bytes-_zkppublickey-bytes-_metadata-bool-external" class="md-nav__link">
+    updateOrg(address _address, bytes32 _name, bytes _messagingEndpoint, bytes _whisperKey, bytes _zkpPublicKey, bytes _metadata) → bool (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registerinterfacesbytes32-_groupname-address-_tokenaddress-address-_shieldaddress-address-_verifieraddress-bool-external" class="md-nav__link">
+    registerInterfaces(bytes32 _groupName, address _tokenAddress, address _shieldAddress, address _verifierAddress) → bool (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getorgcount-uint256-external" class="md-nav__link">
+    getOrgCount() → uint256 (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getorgaddress-_address-address-bytes32-bytes-bytes-bytes-bytes-external" class="md-nav__link">
+    getOrg(address _address) → address, bytes32, bytes, bytes, bytes, bytes (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getinterfaceaddresses-bytes32-address-address-address-external" class="md-nav__link">
+    getInterfaceAddresses() → bytes32[], address[], address[], address[] (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registerorgbytes32-_name-address-_address-bytes-_messagingendpoint-bytes-_whisperkey-bytes-_zkppublickey-bytes-_metadata" class="md-nav__link">
+    RegisterOrg(bytes32 _name, address _address, bytes _messagingEndpoint, bytes _whisperKey, bytes _zkpPublicKey, bytes _metadata)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updateorgbytes32-_name-address-_address-bytes-_messagingendpoint-bytes-_whisperkey-bytes-_zkppublickey-bytes-_metadata" class="md-nav__link">
+    UpdateOrg(bytes32 _name, address _address, bytes _messagingEndpoint, bytes _whisperKey, bytes _zkpPublicKey, bytes _metadata)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iorgregistry" class="md-nav__link">
+    IOrgRegistry
+  </a>
+  
+    <nav class="md-nav" aria-label="IOrgRegistry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#registerorgaddress-bytes32-bytes-bytes-bytes-bytes-bool-external" class="md-nav__link">
+    registerOrg(address, bytes32, bytes, bytes, bytes, bytes) → bool (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updateorgaddress-bytes32-bytes-bytes-bytes-bytes-bool-external" class="md-nav__link">
+    updateOrg(address, bytes32, bytes, bytes, bytes, bytes) → bool (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getorgcount-uint256-external_1" class="md-nav__link">
+    getOrgCount() → uint256 (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getorgaddress-address-bytes32-bytes-bytes-bytes-bytes-external" class="md-nav__link">
+    getOrg(address) → address, bytes32, bytes, bytes, bytes, bytes (external)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erc165compatible" class="md-nav__link">
+    ERC165Compatible
+  </a>
+  
+    <nav class="md-nav" aria-label="ERC165Compatible">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setinterfaces-bool-public_1" class="md-nav__link">
+    setInterfaces() → bool (public)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erc1820registry" class="md-nav__link">
+    ERC1820Registry
+  </a>
+  
+    <nav class="md-nav" aria-label="ERC1820Registry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getinterfaceimplementeraddress-_addr-bytes32-_interfacehash-address-external" class="md-nav__link">
+    getInterfaceImplementer(address _addr, bytes32 _interfaceHash) → address (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setinterfaceimplementeraddress-_addr-bytes32-_interfacehash-address-_implementer-external" class="md-nav__link">
+    setInterfaceImplementer(address _addr, bytes32 _interfaceHash, address _implementer) (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setmanageraddress-_addr-address-_newmanager-external" class="md-nav__link">
+    setManager(address _addr, address _newManager) (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmanageraddress-_addr-address-public" class="md-nav__link">
+    getManager(address _addr) → address (public)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfacehashstring-_interfacename-bytes32-external" class="md-nav__link">
+    interfaceHash(string _interfaceName) → bytes32 (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updateerc165cacheaddress-_contract-bytes4-_interfaceid-external" class="md-nav__link">
+    updateERC165Cache(address _contract, bytes4 _interfaceId) (external)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementserc165interfaceaddress-_contract-bytes4-_interfaceid-bool-public" class="md-nav__link">
+    implementsERC165Interface(address _contract, bytes4 _interfaceId) → bool (public)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementserc165interfacenocacheaddress-_contract-bytes4-_interfaceid-bool-public" class="md-nav__link">
+    implementsERC165InterfaceNoCache(address _contract, bytes4 _interfaceId) → bool (public)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iserc165interfacebytes32-_interfacehash-bool-internal" class="md-nav__link">
+    isERC165Interface(bytes32 _interfaceHash) → bool (internal)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nothrowcalladdress-_contract-bytes4-_interfaceid-uint256-success-uint256-result-internal" class="md-nav__link">
+    noThrowCall(address _contract, bytes4 _interfaceId) → uint256 success, uint256 result (internal)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaceimplementersetaddress-addr-bytes32-interfacehash-address-implementer" class="md-nav__link">
+    InterfaceImplementerSet(address addr, bytes32 interfaceHash, address implementer)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managerchangedaddress-addr-address-newmanager" class="md-nav__link">
+    ManagerChanged(address addr, address newManager)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/sambacha/baseline-protocol/edit/master/docs/REGISTRY.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                  <h1>REGISTRY</h1>
+                
+                <h2 id="registrar"><code>Registrar</code><a class="headerlink" href="#registrar" title="Permanent link"></a></h2>
+<p>Contract that acts as a client for interacting with the ERC1820Registry</p>
+<h3 id="onlymanager"><code>onlyManager()</code><a class="headerlink" href="#onlymanager" title="Permanent link"></a></h3>
+<p>Throws if called by any account other than the owner.</p>
+<h3 id="constructoraddress-erc1820registryaddress-public"><code>constructor(address ERC1820RegistryAddress)</code> (public)<a class="headerlink" href="#constructoraddress-erc1820registryaddress-public" title="Permanent link"></a></h3>
+<p>Constructor that takes an argument of the ERC1820RegistryAddress</p>
+<p>Upon actual deployment of a static registry contract, this argument can be removed</p>
+<h3 id="setinterfaceimplementationstring-_interfacelabel-address-_implementation-internal"><code>setInterfaceImplementation(string _interfaceLabel, address _implementation)</code> (internal)<a class="headerlink" href="#setinterfaceimplementationstring-_interfacelabel-address-_implementation-internal" title="Permanent link"></a></h3>
+<p>Since this is an internal method any contract inheriting this contract would be
+leveraged as the sender for the interface registry</p>
+<p>This enables setting the interface implementation</p>
+<h3 id="interfaceaddraddress-addr-string-_interfacelabel-address-external"><code>interfaceAddr(address addr, string _interfaceLabel) → address</code> (external)<a class="headerlink" href="#interfaceaddraddress-addr-string-_interfacelabel-address-external" title="Permanent link"></a></h3>
+<p>This enables getting the address of the implementer</p>
+<h3 id="assignmanagementaddress-_newmanager-internal"><code>assignManagement(address _newManager)</code> (internal)<a class="headerlink" href="#assignmanagementaddress-_newmanager-internal" title="Permanent link"></a></h3>
+<p>Since this is an internal method any contract inheriting this contract would be
+leveraged to call this function directly</p>
+<p>This enables assigning or changing manager</p>
+<h3 id="getmanager-address-public"><code>getManager() → address</code> (public)<a class="headerlink" href="#getmanager-address-public" title="Permanent link"></a></h3>
+<p>This allows you to get this contract manager address</p>
+<h2 id="orgregistry"><code>OrgRegistry</code><a class="headerlink" href="#orgregistry" title="Permanent link"></a></h2>
+<p>Contract for maintaining organization registry
+Contract inherits from Ownable and ERC165Compatible
+Ownable contains ownership criteria of the organization registry
+ERC165Compatible contains interface compatibility checks</p>
+<h3 id="constructoraddress-_erc1820-public"><code>constructor(address _erc1820)</code> (public)<a class="headerlink" href="#constructoraddress-_erc1820-public" title="Permanent link"></a></h3>
+<p>constructor function that takes the address of a pre-deployed ERC1820
+registry. Ideally, this contract is a publicly known address:
+0x1820a4B7618BdE71Dce8cdc73aAB6C95905faD24. Inherently, the constructor
+sets the interfaces and registers the current contract with the global registry</p>
+<h3 id="setinterfaces-bool-public"><code>setInterfaces() → bool</code> (public)<a class="headerlink" href="#setinterfaces-bool-public" title="Permanent link"></a></h3>
+<p>This is an implementation of setting interfaces for the organization
+registry contract</p>
+<p>the character &lsquo;^&rsquo; corresponds to bit wise xor of individual interface id&rsquo;s
+which are the parsed 4 bytes of the function signature of each of the functions
+in the org registry contract</p>
+<h3 id="getinterfaces-bytes4-external"><code>getInterfaces() → bytes4</code> (external)<a class="headerlink" href="#getinterfaces-bytes4-external" title="Permanent link"></a></h3>
+<p>This function is a helper function to be able to get the
+set interface id by the setInterfaces()</p>
+<h3 id="canimplementinterfaceforaddressbytes32-interfacehash-address-addr-bytes32-external"><code>canImplementInterfaceForAddress(bytes32 interfaceHash, address addr) → bytes32</code> (external)<a class="headerlink" href="#canimplementinterfaceforaddressbytes32-interfacehash-address-addr-bytes32-external" title="Permanent link"></a></h3>
+<p>Indicates whether the contract implements the interface &lsquo;interfaceHash&rsquo; for the address &lsquo;addr&rsquo; or not.</p>
+<p>Below implementation is necessary to be able to have the ability to register with ERC1820</p>
+<h3 id="assignmanageraddress-_newmanager-external"><code>assignManager(address _newManager)</code> (external)<a class="headerlink" href="#assignmanageraddress-_newmanager-external" title="Permanent link"></a></h3>
+<p>Since this is an inherited method from Registrar, it allows for a new manager to be set
+for this contract instance</p>
+<h3 id="registerorgaddress-_address-bytes32-_name-bytes-_messagingendpoint-bytes-_whisperkey-bytes-_zkppublickey-bytes-_metadata-bool-external"><code>registerOrg(address _address, bytes32 _name, bytes _messagingEndpoint, bytes _whisperKey, bytes _zkpPublicKey, bytes _metadata) → bool</code> (external)<a class="headerlink" href="#registerorgaddress-_address-bytes32-_name-bytes-_messagingendpoint-bytes-_whisperkey-bytes-_zkppublickey-bytes-_metadata-bool-external" title="Permanent link"></a></h3>
+<p>Function to register an organization</p>
+<p>Function to register an organization</p>
+<h3 id="updateorgaddress-_address-bytes32-_name-bytes-_messagingendpoint-bytes-_whisperkey-bytes-_zkppublickey-bytes-_metadata-bool-external"><code>updateOrg(address _address, bytes32 _name, bytes _messagingEndpoint, bytes _whisperKey, bytes _zkpPublicKey, bytes _metadata) → bool</code> (external)<a class="headerlink" href="#updateorgaddress-_address-bytes32-_name-bytes-_messagingendpoint-bytes-_whisperkey-bytes-_zkppublickey-bytes-_metadata-bool-external" title="Permanent link"></a></h3>
+<p>Function to update an organization</p>
+<p>Function to update an organization</p>
+<h3 id="registerinterfacesbytes32-_groupname-address-_tokenaddress-address-_shieldaddress-address-_verifieraddress-bool-external"><code>registerInterfaces(bytes32 _groupName, address _tokenAddress, address _shieldAddress, address _verifierAddress) → bool</code> (external)<a class="headerlink" href="#registerinterfacesbytes32-_groupname-address-_tokenaddress-address-_shieldaddress-address-_verifieraddress-bool-external" title="Permanent link"></a></h3>
+<p>Function to register the names of the interfaces associated with the OrgRegistry</p>
+<p>Function to register an organization&rsquo;s interfaces for easy lookup</p>
+<h3 id="getorgcount-uint256-external"><code>getOrgCount() → uint256</code> (external)<a class="headerlink" href="#getorgcount-uint256-external" title="Permanent link"></a></h3>
+<p>Function to get the count of number of organizations to help with extraction</p>
+<h3 id="getorgaddress-_address-address-bytes32-bytes-bytes-bytes-bytes-external"><code>getOrg(address _address) → address, bytes32, bytes, bytes, bytes, bytes</code> (external)<a class="headerlink" href="#getorgaddress-_address-address-bytes32-bytes-bytes-bytes-bytes-external" title="Permanent link"></a></h3>
+<p>Function to get a single organization&rsquo;s details</p>
+<h3 id="getinterfaceaddresses-bytes32-address-address-address-external"><code>getInterfaceAddresses() → bytes32[], address[], address[], address[]</code> (external)<a class="headerlink" href="#getinterfaceaddresses-bytes32-address-address-address-external" title="Permanent link"></a></h3>
+<p>Function to get organization&rsquo;s interface details</p>
+<h3 id="registerorgbytes32-_name-address-_address-bytes-_messagingendpoint-bytes-_whisperkey-bytes-_zkppublickey-bytes-_metadata"><code>RegisterOrg(bytes32 _name, address _address, bytes _messagingEndpoint, bytes _whisperKey, bytes _zkpPublicKey, bytes _metadata)</code><a class="headerlink" href="#registerorgbytes32-_name-address-_address-bytes-_messagingendpoint-bytes-_whisperkey-bytes-_zkppublickey-bytes-_metadata" title="Permanent link"></a></h3>
+<h3 id="updateorgbytes32-_name-address-_address-bytes-_messagingendpoint-bytes-_whisperkey-bytes-_zkppublickey-bytes-_metadata"><code>UpdateOrg(bytes32 _name, address _address, bytes _messagingEndpoint, bytes _whisperKey, bytes _zkpPublicKey, bytes _metadata)</code><a class="headerlink" href="#updateorgbytes32-_name-address-_address-bytes-_messagingendpoint-bytes-_whisperkey-bytes-_zkppublickey-bytes-_metadata" title="Permanent link"></a></h3>
+<h2 id="iorgregistry"><code>IOrgRegistry</code><a class="headerlink" href="#iorgregistry" title="Permanent link"></a></h2>
+<h3 id="registerorgaddress-bytes32-bytes-bytes-bytes-bytes-bool-external"><code>registerOrg(address, bytes32, bytes, bytes, bytes, bytes) → bool</code> (external)<a class="headerlink" href="#registerorgaddress-bytes32-bytes-bytes-bytes-bytes-bool-external" title="Permanent link"></a></h3>
+<h3 id="updateorgaddress-bytes32-bytes-bytes-bytes-bytes-bool-external"><code>updateOrg(address, bytes32, bytes, bytes, bytes, bytes) → bool</code> (external)<a class="headerlink" href="#updateorgaddress-bytes32-bytes-bytes-bytes-bytes-bool-external" title="Permanent link"></a></h3>
+<h3 id="getorgcount-uint256-external_1"><code>getOrgCount() → uint256</code> (external)<a class="headerlink" href="#getorgcount-uint256-external_1" title="Permanent link"></a></h3>
+<h3 id="getorgaddress-address-bytes32-bytes-bytes-bytes-bytes-external"><code>getOrg(address) → address, bytes32, bytes, bytes, bytes, bytes</code> (external)<a class="headerlink" href="#getorgaddress-address-bytes32-bytes-bytes-bytes-bytes-external" title="Permanent link"></a></h3>
+<h2 id="erc165compatible"><code>ERC165Compatible</code><a class="headerlink" href="#erc165compatible" title="Permanent link"></a></h2>
+<h3 id="setinterfaces-bool-public_1"><code>setInterfaces() → bool</code> (public)<a class="headerlink" href="#setinterfaces-bool-public_1" title="Permanent link"></a></h3>
+<h2 id="erc1820registry"><code>ERC1820Registry</code><a class="headerlink" href="#erc1820registry" title="Permanent link"></a></h2>
+<p>This contract is the official implementation of the ERC1820 Registry.
+For more details, see <a href="https://eips.ethereum.org/EIPS/eip-1820">https://eips.ethereum.org/EIPS/eip-1820</a></p>
+<h3 id="getinterfaceimplementeraddress-_addr-bytes32-_interfacehash-address-external"><code>getInterfaceImplementer(address _addr, bytes32 _interfaceHash) → address</code> (external)<a class="headerlink" href="#getinterfaceimplementeraddress-_addr-bytes32-_interfacehash-address-external" title="Permanent link"></a></h3>
+<p>Query if an address implements an interface and through which contract.</p>
+<h3 id="setinterfaceimplementeraddress-_addr-bytes32-_interfacehash-address-_implementer-external"><code>setInterfaceImplementer(address _addr, bytes32 _interfaceHash, address _implementer)</code> (external)<a class="headerlink" href="#setinterfaceimplementeraddress-_addr-bytes32-_interfacehash-address-_implementer-external" title="Permanent link"></a></h3>
+<p>Sets the contract which implements a specific interface for an address.
+Only the manager defined for that address can set it.
+(Each address is the manager for itself until it sets a new manager.)</p>
+<h3 id="setmanageraddress-_addr-address-_newmanager-external"><code>setManager(address _addr, address _newManager)</code> (external)<a class="headerlink" href="#setmanageraddress-_addr-address-_newmanager-external" title="Permanent link"></a></h3>
+<p>Sets &lsquo;_newManager&rsquo; as manager for &lsquo;_addr&rsquo;.
+The new manager will be able to call &lsquo;setInterfaceImplementer&rsquo; for &lsquo;_addr&rsquo;.</p>
+<h3 id="getmanageraddress-_addr-address-public"><code>getManager(address _addr) → address</code> (public)<a class="headerlink" href="#getmanageraddress-_addr-address-public" title="Permanent link"></a></h3>
+<p>Get the manager of an address.</p>
+<h3 id="interfacehashstring-_interfacename-bytes32-external"><code>interfaceHash(string _interfaceName) → bytes32</code> (external)<a class="headerlink" href="#interfacehashstring-_interfacename-bytes32-external" title="Permanent link"></a></h3>
+<p>Compute the keccak256 hash of an interface given its name.</p>
+<h3 id="updateerc165cacheaddress-_contract-bytes4-_interfaceid-external"><code>updateERC165Cache(address _contract, bytes4 _interfaceId)</code> (external)<a class="headerlink" href="#updateerc165cacheaddress-_contract-bytes4-_interfaceid-external" title="Permanent link"></a></h3>
+<p>Updates the cache with whether the contract implements an ERC165 interface or not.</p>
+<h3 id="implementserc165interfaceaddress-_contract-bytes4-_interfaceid-bool-public"><code>implementsERC165Interface(address _contract, bytes4 _interfaceId) → bool</code> (public)<a class="headerlink" href="#implementserc165interfaceaddress-_contract-bytes4-_interfaceid-bool-public" title="Permanent link"></a></h3>
+<h3 id="implementserc165interfacenocacheaddress-_contract-bytes4-_interfaceid-bool-public"><code>implementsERC165InterfaceNoCache(address _contract, bytes4 _interfaceId) → bool</code> (public)<a class="headerlink" href="#implementserc165interfacenocacheaddress-_contract-bytes4-_interfaceid-bool-public" title="Permanent link"></a></h3>
+<p>Checks whether a contract implements an ERC165 interface or not without using nor updating the cache.</p>
+<h3 id="iserc165interfacebytes32-_interfacehash-bool-internal"><code>isERC165Interface(bytes32 _interfaceHash) → bool</code> (internal)<a class="headerlink" href="#iserc165interfacebytes32-_interfacehash-bool-internal" title="Permanent link"></a></h3>
+<p>Checks whether the hash is a ERC165 interface (ending with 28 zeroes) or not.</p>
+<h3 id="nothrowcalladdress-_contract-bytes4-_interfaceid-uint256-success-uint256-result-internal"><code>noThrowCall(address _contract, bytes4 _interfaceId) → uint256 success, uint256 result</code> (internal)<a class="headerlink" href="#nothrowcalladdress-_contract-bytes4-_interfaceid-uint256-success-uint256-result-internal" title="Permanent link"></a></h3>
+<p>Make a call on a contract without throwing if the function does not exist.</p>
+<h3 id="interfaceimplementersetaddress-addr-bytes32-interfacehash-address-implementer"><code>InterfaceImplementerSet(address addr, bytes32 interfaceHash, address implementer)</code><a class="headerlink" href="#interfaceimplementersetaddress-addr-bytes32-interfacehash-address-implementer" title="Permanent link"></a></h3>
+<p>Indicates a contract is the &lsquo;implementer&rsquo; of &lsquo;interfaceHash&rsquo; for &lsquo;addr&rsquo;.</p>
+<h3 id="managerchangedaddress-addr-address-newmanager"><code>ManagerChanged(address addr, address newManager)</code><a class="headerlink" href="#managerchangedaddress-addr-address-newmanager" title="Permanent link"></a></h3>
+<p>Indicates &lsquo;newManager&rsquo; is the address of the new manager for &lsquo;addr&rsquo;.</p>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: November 9, 2020
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Baseline Protocol and its documentation are licensed under Apache 2.0 license / This <a href="https://readthedocs.org/">Readthedocs.org</a> documentation is maintained by <a href="#">Baseline Protocol community</a>.
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d1f5a259.min.js"></script>
+      <script src="../assets/javascripts/bundle.d5fec882.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.fae956e7.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
