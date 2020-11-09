@@ -158,9 +158,7 @@
   "ast": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/registry/IOrgRegistry.sol",
     "exportedSymbols": {
-      "IOrgRegistry": [
-        817
-      ]
+      "IOrgRegistry": [817]
     },
     "id": 818,
     "license": "CC0",
@@ -168,21 +166,13 @@
     "nodes": [
       {
         "id": 759,
-        "literals": [
-          "solidity",
-          "^",
-          "0.6",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.6", ".9"],
         "nodeType": "PragmaDirective",
         "src": "32:23:5"
       },
       {
         "id": 760,
-        "literals": [
-          "experimental",
-          "ABIEncoderV2"
-        ],
+        "literals": ["experimental", "ABIEncoderV2"],
         "nodeType": "PragmaDirective",
         "src": "56:33:5"
       },
@@ -194,9 +184,7 @@
         "documentation": null,
         "fullyImplemented": false,
         "id": 817,
-        "linearizedBaseContracts": [
-          817
-        ],
+        "linearizedBaseContracts": [817],
         "name": "IOrgRegistry",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -953,9 +941,7 @@
   "legacyAST": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/registry/IOrgRegistry.sol",
     "exportedSymbols": {
-      "IOrgRegistry": [
-        817
-      ]
+      "IOrgRegistry": [817]
     },
     "id": 818,
     "license": "CC0",
@@ -963,21 +949,13 @@
     "nodes": [
       {
         "id": 759,
-        "literals": [
-          "solidity",
-          "^",
-          "0.6",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.6", ".9"],
         "nodeType": "PragmaDirective",
         "src": "32:23:5"
       },
       {
         "id": 760,
-        "literals": [
-          "experimental",
-          "ABIEncoderV2"
-        ],
+        "literals": ["experimental", "ABIEncoderV2"],
         "nodeType": "PragmaDirective",
         "src": "56:33:5"
       },
@@ -989,9 +967,7 @@
         "documentation": null,
         "fullyImplemented": false,
         "id": 817,
-        "linearizedBaseContracts": [
-          817
-        ],
+        "linearizedBaseContracts": [817],
         "name": "IOrgRegistry",
         "nodeType": "ContractDefinition",
         "nodes": [

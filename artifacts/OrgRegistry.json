@@ -532,9 +532,7 @@
   "ast": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/registry/OrgRegistry.sol",
     "exportedSymbols": {
-      "OrgRegistry": [
-        1339
-      ]
+      "OrgRegistry": [1339]
     },
     "id": 1340,
     "license": "CC0",
@@ -542,21 +540,13 @@
     "nodes": [
       {
         "id": 819,
-        "literals": [
-          "solidity",
-          "^",
-          "0.6",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.6", ".9"],
         "nodeType": "PragmaDirective",
         "src": "32:23:6"
       },
       {
         "id": 820,
-        "literals": [
-          "experimental",
-          "ABIEncoderV2"
-        ],
+        "literals": ["experimental", "ABIEncoderV2"],
         "nodeType": "PragmaDirective",
         "src": "56:33:6"
       },
@@ -680,15 +670,7 @@
             "src": "541:12:6"
           }
         ],
-        "contractDependencies": [
-          817,
-          1468,
-          1496,
-          1980,
-          2089,
-          2146,
-          2158
-        ],
+        "contractDependencies": [817, 1468, 1496, 1980, 2089, 2146, 2158],
         "contractKind": "contract",
         "documentation": {
           "id": 825,
@@ -698,16 +680,7 @@
         },
         "fullyImplemented": true,
         "id": 1339,
-        "linearizedBaseContracts": [
-          1339,
-          817,
-          1468,
-          1496,
-          2146,
-          2158,
-          2089,
-          1980
-        ],
+        "linearizedBaseContracts": [1339, 817, 1468, 1496, 2146, 2158, 2089, 1980],
         "name": "OrgRegistry",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -1627,9 +1600,7 @@
                       "id": 911,
                       "name": "setInterfaces",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        953
-                      ],
+                      "overloadedDeclarations": [953],
                       "referencedDeclaration": 953,
                       "src": "1884:13:6",
                       "typeDescriptions": {
@@ -1898,9 +1869,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              1495
-            ],
+            "baseFunctions": [1495],
             "body": {
               "id": 952,
               "nodeType": "Block",
@@ -2901,18 +2870,14 @@
             "visibility": "external"
           },
           {
-            "baseFunctions": [
-              777
-            ],
+            "baseFunctions": [777],
             "body": {
               "id": 1057,
               "nodeType": "Block",
               "src": "4804:294:6",
               "statements": [
                 {
-                  "assignments": [
-                    1024
-                  ],
+                  "assignments": [1024],
                   "declarations": [
                     {
                       "constant": false,
@@ -3651,9 +3616,7 @@
             "visibility": "external"
           },
           {
-            "baseFunctions": [
-              794
-            ],
+            "baseFunctions": [794],
             "body": {
               "id": 1134,
               "nodeType": "Block",
@@ -3800,10 +3763,7 @@
                       "id": 1077,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "5934:7:6",
                       "typeDescriptions": {
@@ -5102,9 +5062,7 @@
             "visibility": "external"
           },
           {
-            "baseFunctions": [
-              799
-            ],
+            "baseFunctions": [799],
             "body": {
               "id": 1178,
               "nodeType": "Block",
@@ -5214,9 +5172,7 @@
             "visibility": "external"
           },
           {
-            "baseFunctions": [
-              816
-            ],
+            "baseFunctions": [816],
             "body": {
               "id": 1224,
               "nodeType": "Block",
@@ -5827,9 +5783,7 @@
               "src": "8516:697:6",
               "statements": [
                 {
-                  "assignments": [
-                    1245
-                  ],
+                  "assignments": [1245],
                   "declarations": [
                     {
                       "constant": false,
@@ -5946,9 +5900,7 @@
                   "src": "8526:57:6"
                 },
                 {
-                  "assignments": [
-                    1256
-                  ],
+                  "assignments": [1256],
                   "declarations": [
                     {
                       "constant": false,
@@ -6066,9 +6018,7 @@
                   "src": "8593:61:6"
                 },
                 {
-                  "assignments": [
-                    1267
-                  ],
+                  "assignments": [1267],
                   "declarations": [
                     {
                       "constant": false,
@@ -6186,9 +6136,7 @@
                   "src": "8664:60:6"
                 },
                 {
-                  "assignments": [
-                    1278
-                  ],
+                  "assignments": [1278],
                   "declarations": [
                     {
                       "constant": false,
@@ -6312,9 +6260,7 @@
                     "src": "8854:297:6",
                     "statements": [
                       {
-                        "assignments": [
-                          1296
-                        ],
+                        "assignments": [1296],
                         "declarations": [
                           {
                             "constant": false,
@@ -6796,9 +6742,7 @@
                   },
                   "id": 1330,
                   "initializationExpression": {
-                    "assignments": [
-                      1286
-                    ],
+                    "assignments": [1286],
                     "declarations": [
                       {
                         "constant": false,
@@ -7163,9 +7107,7 @@
   "legacyAST": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/registry/OrgRegistry.sol",
     "exportedSymbols": {
-      "OrgRegistry": [
-        1339
-      ]
+      "OrgRegistry": [1339]
     },
     "id": 1340,
     "license": "CC0",
@@ -7173,21 +7115,13 @@
     "nodes": [
       {
         "id": 819,
-        "literals": [
-          "solidity",
-          "^",
-          "0.6",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.6", ".9"],
         "nodeType": "PragmaDirective",
         "src": "32:23:6"
       },
       {
         "id": 820,
-        "literals": [
-          "experimental",
-          "ABIEncoderV2"
-        ],
+        "literals": ["experimental", "ABIEncoderV2"],
         "nodeType": "PragmaDirective",
         "src": "56:33:6"
       },
@@ -7311,15 +7245,7 @@
             "src": "541:12:6"
           }
         ],
-        "contractDependencies": [
-          817,
-          1468,
-          1496,
-          1980,
-          2089,
-          2146,
-          2158
-        ],
+        "contractDependencies": [817, 1468, 1496, 1980, 2089, 2146, 2158],
         "contractKind": "contract",
         "documentation": {
           "id": 825,
@@ -7329,16 +7255,7 @@
         },
         "fullyImplemented": true,
         "id": 1339,
-        "linearizedBaseContracts": [
-          1339,
-          817,
-          1468,
-          1496,
-          2146,
-          2158,
-          2089,
-          1980
-        ],
+        "linearizedBaseContracts": [1339, 817, 1468, 1496, 2146, 2158, 2089, 1980],
         "name": "OrgRegistry",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -8258,9 +8175,7 @@
                       "id": 911,
                       "name": "setInterfaces",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        953
-                      ],
+                      "overloadedDeclarations": [953],
                       "referencedDeclaration": 953,
                       "src": "1884:13:6",
                       "typeDescriptions": {
@@ -8529,9 +8444,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              1495
-            ],
+            "baseFunctions": [1495],
             "body": {
               "id": 952,
               "nodeType": "Block",
@@ -9532,18 +9445,14 @@
             "visibility": "external"
           },
           {
-            "baseFunctions": [
-              777
-            ],
+            "baseFunctions": [777],
             "body": {
               "id": 1057,
               "nodeType": "Block",
               "src": "4804:294:6",
               "statements": [
                 {
-                  "assignments": [
-                    1024
-                  ],
+                  "assignments": [1024],
                   "declarations": [
                     {
                       "constant": false,
@@ -10282,9 +10191,7 @@
             "visibility": "external"
           },
           {
-            "baseFunctions": [
-              794
-            ],
+            "baseFunctions": [794],
             "body": {
               "id": 1134,
               "nodeType": "Block",
@@ -10431,10 +10338,7 @@
                       "id": 1077,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "5934:7:6",
                       "typeDescriptions": {
@@ -11733,9 +11637,7 @@
             "visibility": "external"
           },
           {
-            "baseFunctions": [
-              799
-            ],
+            "baseFunctions": [799],
             "body": {
               "id": 1178,
               "nodeType": "Block",
@@ -11845,9 +11747,7 @@
             "visibility": "external"
           },
           {
-            "baseFunctions": [
-              816
-            ],
+            "baseFunctions": [816],
             "body": {
               "id": 1224,
               "nodeType": "Block",
@@ -12458,9 +12358,7 @@
               "src": "8516:697:6",
               "statements": [
                 {
-                  "assignments": [
-                    1245
-                  ],
+                  "assignments": [1245],
                   "declarations": [
                     {
                       "constant": false,
@@ -12577,9 +12475,7 @@
                   "src": "8526:57:6"
                 },
                 {
-                  "assignments": [
-                    1256
-                  ],
+                  "assignments": [1256],
                   "declarations": [
                     {
                       "constant": false,
@@ -12697,9 +12593,7 @@
                   "src": "8593:61:6"
                 },
                 {
-                  "assignments": [
-                    1267
-                  ],
+                  "assignments": [1267],
                   "declarations": [
                     {
                       "constant": false,
@@ -12817,9 +12711,7 @@
                   "src": "8664:60:6"
                 },
                 {
-                  "assignments": [
-                    1278
-                  ],
+                  "assignments": [1278],
                   "declarations": [
                     {
                       "constant": false,
@@ -12943,9 +12835,7 @@
                     "src": "8854:297:6",
                     "statements": [
                       {
-                        "assignments": [
-                          1296
-                        ],
+                        "assignments": [1296],
                         "declarations": [
                           {
                             "constant": false,
@@ -13427,9 +13317,7 @@
                   },
                   "id": 1330,
                   "initializationExpression": {
-                    "assignments": [
-                      1286
-                    ],
+                    "assignments": [1286],
                     "declarations": [
                       {
                         "constant": false,

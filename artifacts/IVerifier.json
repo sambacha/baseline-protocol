@@ -37,9 +37,7 @@
   "ast": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/privacy/IVerifier.sol",
     "exportedSymbols": {
-      "IVerifier": [
-        35
-      ]
+      "IVerifier": [35]
     },
     "id": 36,
     "license": "CC0",
@@ -47,12 +45,7 @@
     "nodes": [
       {
         "id": 22,
-        "literals": [
-          "solidity",
-          "^",
-          "0.6",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.6", ".9"],
         "nodeType": "PragmaDirective",
         "src": "32:23:1"
       },
@@ -69,9 +62,7 @@
         },
         "fullyImplemented": false,
         "id": 35,
-        "linearizedBaseContracts": [
-          35
-        ],
+        "linearizedBaseContracts": [35],
         "name": "IVerifier",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -220,9 +211,7 @@
   "legacyAST": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/privacy/IVerifier.sol",
     "exportedSymbols": {
-      "IVerifier": [
-        35
-      ]
+      "IVerifier": [35]
     },
     "id": 36,
     "license": "CC0",
@@ -230,12 +219,7 @@
     "nodes": [
       {
         "id": 22,
-        "literals": [
-          "solidity",
-          "^",
-          "0.6",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.6", ".9"],
         "nodeType": "PragmaDirective",
         "src": "32:23:1"
       },
@@ -252,9 +236,7 @@
         },
         "fullyImplemented": false,
         "id": 35,
-        "linearizedBaseContracts": [
-          35
-        ],
+        "linearizedBaseContracts": [35],
         "name": "IVerifier",
         "nodeType": "ContractDefinition",
         "nodes": [

@@ -6,9 +6,9 @@ Baseline core contracts package.
 
 `npm install @baseline-protocol/contracts`
 
-## Overview 
+## Overview
 
- <img src="/docs/contracts.svg" 
+<img src="/docs/contracts.svg" 
       alt="Baseline Protocol Contracts UML" 
       srcset="/docs/contracts.svg"
       sizes="(max-width: 600px) 600px">
@@ -66,7 +66,6 @@ event UpdateOrg(
 
 Unlike the Radish34 Reference Implementation, the contracts package does not include a "shield" contract. Rather, it is up to each workgroup to determine a suitable shielding mechanism to ensure privacy. For example, the IBaselineRPC implementation within the Nethermind client used in the BRI-1 Reference Implementation ships with shield contract binaries (i.e., including the MerkleTreeSHA contract).
 
-
 ## Types
 
 > truffle types
@@ -92,8 +91,6 @@ types
     └── types.d.ts
 ```
 
-
-
 ## Examples
 
 ```
@@ -114,7 +111,6 @@ let OrgRegistry = new build/contracts/OrgRegistry.json()
 OrgRegistry.orginiszation()
 ```
 
-
 #### MerkleTreeSHA256
 
 ```javascript
@@ -125,7 +121,7 @@ MerkleTreeSHA256.merkle()
 
 #### Registrar
 
-To use  Registrar just import it into your project:
+To use Registrar just import it into your project:
 
 ```javascript
 const build/contracts/Registrar.json = require('./dapp-module/Registrar/index.js')
@@ -133,7 +129,6 @@ let Registrar = new build/contracts/Registrar.json()
 Registrar.register()
 ```
 
-## License 
+## License
 
 CC-0
-

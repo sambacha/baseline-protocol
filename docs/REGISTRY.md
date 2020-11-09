@@ -33,6 +33,7 @@ This enables assigning or changing manager
 ### `getManager() → address` (public)
 
 This allows you to get this contract manager address
+
 ## `OrgRegistry`
 
 Contract for maintaining organization registry
@@ -105,6 +106,7 @@ Function to get organization's interface details
 ### `RegisterOrg(bytes32 _name, address _address, bytes _messagingEndpoint, bytes _whisperKey, bytes _zkpPublicKey, bytes _metadata)`
 
 ### `UpdateOrg(bytes32 _name, address _address, bytes _messagingEndpoint, bytes _whisperKey, bytes _zkpPublicKey, bytes _metadata)`
+
 ## `IOrgRegistry`
 
 ### `registerOrg(address, bytes32, bytes, bytes, bytes, bytes) → bool` (external)
@@ -114,9 +116,11 @@ Function to get organization's interface details
 ### `getOrgCount() → uint256` (external)
 
 ### `getOrg(address) → address, bytes32, bytes, bytes, bytes, bytes` (external)
+
 ## `ERC165Compatible`
 
 ### `setInterfaces() → bool` (public)
+
 ## `ERC1820Registry`
 
 This contract is the official implementation of the ERC1820 Registry.
