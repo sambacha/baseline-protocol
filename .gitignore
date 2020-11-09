@@ -1,3 +1,4 @@
+artifacts/
 *.log
 *-error.log
 node_modules
