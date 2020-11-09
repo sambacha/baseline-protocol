@@ -105,8 +105,13 @@ src/
         └── index.js
 ```
 
+> Examples in `psuedo` code, note the require statement does not resolve to the package
+
+### OrgRegistry
+
+
 ```javascript
-const build/contracts/OrgRegistry.json = require('./dapp-module/OrgRegistry/index.js')
+const build/contracts/OrgRegistry.json = require('./src/modules/OrgRegistry/index.js')
 let OrgRegistry = new build/contracts/OrgRegistry.json()
 OrgRegistry.orginiszation()
 ```
@@ -114,7 +119,7 @@ OrgRegistry.orginiszation()
 #### MerkleTreeSHA256
 
 ```javascript
-const MerkleTreeSHA256.json = require('./dapp-module/MerkleTreeSHA256/index.js')
+const MerkleTreeSHA256.json = require('./src/modules/MerkleTreeSHA256/index.js')
 let MerkleTreeSHA256 = new build/contracts/MerkleTreeSHA256.json()
 MerkleTreeSHA256.merkle()
 ```
@@ -124,7 +129,7 @@ MerkleTreeSHA256.merkle()
 To use Registrar just import it into your project:
 
 ```javascript
-const build/contracts/Registrar.json = require('./dapp-module/Registrar/index.js')
+const build/contracts/Registrar.json = require('./src/modules/Registrar/index.js')
 let Registrar = new build/contracts/Registrar.json()
 Registrar.register()
 ```
