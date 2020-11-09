@@ -12,7 +12,9 @@
   "ast": {
     "absolutePath": "@openzeppelin/contracts/GSN/Context.sol",
     "exportedSymbols": {
-      "Context": [1980]
+      "Context": [
+        1980
+      ]
     },
     "id": 1981,
     "license": "MIT",
@@ -20,7 +22,12 @@
     "nodes": [
       {
         "id": 1959,
-        "literals": ["solidity", "^", "0.6", ".0"],
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
         "nodeType": "PragmaDirective",
         "src": "33:23:10"
       },
@@ -32,7 +39,9 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 1980,
-        "linearizedBaseContracts": [1980],
+        "linearizedBaseContracts": [
+          1980
+        ],
         "name": "Context",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -261,7 +270,9 @@
   "legacyAST": {
     "absolutePath": "@openzeppelin/contracts/GSN/Context.sol",
     "exportedSymbols": {
-      "Context": [1980]
+      "Context": [
+        1980
+      ]
     },
     "id": 1981,
     "license": "MIT",
@@ -269,7 +280,12 @@
     "nodes": [
       {
         "id": 1959,
-        "literals": ["solidity", "^", "0.6", ".0"],
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
         "nodeType": "PragmaDirective",
         "src": "33:23:10"
       },
@@ -281,7 +297,9 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 1980,
-        "linearizedBaseContracts": [1980],
+        "linearizedBaseContracts": [
+          1980
+        ],
         "name": "Context",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -512,8 +530,8 @@
     "version": "0.6.9+commit.3e3065ac.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.3.2",
-  "updatedAt": "2020-11-09T05:44:19.436Z",
+  "schemaVersion": "3.2.2",
+  "updatedAt": "2020-11-09T11:17:31.128Z",
   "devdoc": {
     "methods": {}
   },

@@ -6,9 +6,6 @@ Baseline core contracts package.
 
 `npm install @baseline-protocol/contracts`
 
-## Building
-
-You can build the package locally with `make`. The build compiles the Baseline solidity contracts package and its dependencies using truffle.
 
 ## Organization Registry
 
@@ -62,3 +59,75 @@ event UpdateOrg(
 ## Shield
 
 Unlike the Radish34 Reference Implementation, the contracts package does not include a "shield" contract. Rather, it is up to each workgroup to determine a suitable shielding mechanism to ensure privacy. For example, the IBaselineRPC implementation within the Nethermind client used in the BRI-1 Reference Implementation ships with shield contract binaries (i.e., including the MerkleTreeSHA contract).
+
+
+## Types
+
+> truffle types
+
+```
+types
+└── truffle-contracts
+    ├── ERC165.d.ts
+    ├── ERC165Compatible.d.ts
+    ├── ERC1820ImplementerInterface.d.ts
+    ├── ERC1820Registry.d.ts
+    ├── IERC165.d.ts
+    ├── IOrgRegistry.d.ts
+    ├── IShield.d.ts
+    ├── IVerifier.d.ts
+    ├── MerkleTreeSHA256.d.ts
+    ├── OrgRegistry.d.ts
+    ├── Ownable.d.ts
+    ├── Registrar.d.ts
+    ├── Shield.d.ts
+    ├── VerifierNoop.d.ts
+    ├── index.d.ts
+    └── types.d.ts
+```
+
+
+
+## Examples
+
+```
+src/
+├── abi.js
+└── modules
+    ├── MerkleTreeSHA256
+    │   └── index.js
+    ├── OrgRegistry
+    │   └── index.js
+    └── Registrar
+        └── index.js
+```
+
+```javascript
+const build/contracts/OrgRegistry.json = require('./dapp-module/OrgRegistry/index.js')
+let OrgRegistry = new build/contracts/OrgRegistry.json()
+OrgRegistry.orginiszation()
+```
+
+
+#### MerkleTreeSHA256
+
+```javascript
+const MerkleTreeSHA256.json = require('./dapp-module/MerkleTreeSHA256/index.js')
+let MerkleTreeSHA256 = new build/contracts/MerkleTreeSHA256.json()
+MerkleTreeSHA256.merkle()
+```
+
+#### Registrar
+
+To use  Registrar just import it into your project:
+
+```javascript
+const build/contracts/Registrar.json = require('./dapp-module/Registrar/index.js')
+let Registrar = new build/contracts/Registrar.json()
+Registrar.register()
+```
+
+## License 
+
+CC-0
+

@@ -147,18 +147,20 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.9+commit.3e3065ac\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"getOrg\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getOrgCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"registerOrg\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"updateOrg\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/registry/IOrgRegistry.sol\":\"IOrgRegistry\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/registry/IOrgRegistry.sol\":{\"keccak256\":\"0x23793f93dbd8c8700772f4122996b02512071d24a5fc70fd6373c30206046991\",\"license\":\"CC0\",\"urls\":[\"bzz-raw://e53068b00b63068a25c3a5e1586ce77aea69a225ee7692a6e321fd6506f8b503\",\"dweb:/ipfs/QmSRjoR9JHHTNpSg1uJE4aFJwwCsZXCN8JrP7C7DRP6S87\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.9+commit.3e3065ac\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"getOrg\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getOrgCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"registerOrg\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"updateOrg\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/registry/IOrgRegistry.sol\":\"IOrgRegistry\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/registry/IOrgRegistry.sol\":{\"keccak256\":\"0x4c304e80aa06cfa8d10684b1f1802408367ff534a576acb7cbf7a4d09ff36ac1\",\"license\":\"CC0\",\"urls\":[\"bzz-raw://480898968dc9c826f92ba477e5f6a8ccaa8a8b1d75de9b0dc003eb352b44730d\",\"dweb:/ipfs/QmU7mjsY3Ywsndn6ykBrw7FfrWeNdqhEeTkh77EkE17e5i\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: CC0\npragma solidity ^0.6.9;\npragma experimental ABIEncoderV2;\n\ninterface IOrgRegistry {\n    function registerOrg(\n        address,\n        bytes32,\n        bytes calldata,\n        bytes calldata,\n        bytes calldata,\n        bytes calldata\n    ) external returns (bool);\n\n    function updateOrg(\n        address,\n        bytes32,\n        bytes calldata,\n        bytes calldata,\n        bytes calldata,\n        bytes calldata\n    ) external returns (bool);\n\n    function getOrgCount() external view returns (uint);\n\n    function getOrg(address) external view returns (\n        address,\n        bytes32,\n        bytes memory,\n        bytes memory,\n        bytes memory,\n        bytes memory\n    );\n}\n",
+  "source": "// SPDX-License-Identifier: CC0\npragma solidity ^0.6.9;\npragma experimental ABIEncoderV2;\n\ninterface IOrgRegistry {\n    function registerOrg(\n        address,\n        bytes32,\n        bytes calldata,\n        bytes calldata,\n        bytes calldata,\n        bytes calldata\n    ) external returns (bool);\n\n    function updateOrg(\n        address,\n        bytes32,\n        bytes calldata,\n        bytes calldata,\n        bytes calldata,\n        bytes calldata\n    ) external returns (bool);\n\n    function getOrgCount() external view returns (uint256);\n\n    function getOrg(address)\n        external\n        view\n        returns (\n            address,\n            bytes32,\n            bytes memory,\n            bytes memory,\n            bytes memory,\n            bytes memory\n        );\n}\n",
   "sourcePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/registry/IOrgRegistry.sol",
   "ast": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/registry/IOrgRegistry.sol",
     "exportedSymbols": {
-      "IOrgRegistry": [817]
+      "IOrgRegistry": [
+        817
+      ]
     },
     "id": 818,
     "license": "CC0",
@@ -166,13 +168,21 @@
     "nodes": [
       {
         "id": 759,
-        "literals": ["solidity", "^", "0.6", ".9"],
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".9"
+        ],
         "nodeType": "PragmaDirective",
         "src": "32:23:5"
       },
       {
         "id": 760,
-        "literals": ["experimental", "ABIEncoderV2"],
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
         "nodeType": "PragmaDirective",
         "src": "56:33:5"
       },
@@ -184,7 +194,9 @@
         "documentation": null,
         "fullyImplemented": false,
         "id": 817,
-        "linearizedBaseContracts": [817],
+        "linearizedBaseContracts": [
+          817
+        ],
         "name": "IOrgRegistry",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -673,7 +685,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 799,
-                  "src": "538:4:5",
+                  "src": "538:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -682,9 +694,9 @@
                   },
                   "typeName": {
                     "id": 796,
-                    "name": "uint",
+                    "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "538:4:5",
+                    "src": "538:7:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -694,10 +706,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "537:6:5"
+              "src": "537:9:5"
             },
             "scope": 817,
-            "src": "492:52:5",
+            "src": "492:55:5",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -725,7 +737,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 816,
-                  "src": "566:7:5",
+                  "src": "569:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -736,7 +748,7 @@
                     "id": 800,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "566:7:5",
+                    "src": "569:7:5",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -747,7 +759,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "565:9:5"
+              "src": "568:9:5"
             },
             "returnParameters": {
               "id": 815,
@@ -761,7 +773,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 816,
-                  "src": "607:7:5",
+                  "src": "638:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -772,7 +784,7 @@
                     "id": 803,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "607:7:5",
+                    "src": "638:7:5",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -790,7 +802,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 816,
-                  "src": "624:7:5",
+                  "src": "659:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -801,7 +813,7 @@
                     "id": 805,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "624:7:5",
+                    "src": "659:7:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -818,7 +830,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 816,
-                  "src": "641:12:5",
+                  "src": "680:12:5",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -829,7 +841,7 @@
                     "id": 807,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "641:5:5",
+                    "src": "680:5:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -846,7 +858,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 816,
-                  "src": "663:12:5",
+                  "src": "706:12:5",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -857,7 +869,7 @@
                     "id": 809,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "663:5:5",
+                    "src": "706:5:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -874,7 +886,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 816,
-                  "src": "685:12:5",
+                  "src": "732:12:5",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -885,7 +897,7 @@
                     "id": 811,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "685:5:5",
+                    "src": "732:5:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -902,7 +914,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 816,
-                  "src": "707:12:5",
+                  "src": "758:12:5",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -913,7 +925,7 @@
                     "id": 813,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "707:5:5",
+                    "src": "758:5:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -923,25 +935,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "597:128:5"
+              "src": "624:156:5"
             },
             "scope": 817,
-            "src": "550:176:5",
+            "src": "553:228:5",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
         "scope": 818,
-        "src": "91:637:5"
+        "src": "91:692:5"
       }
     ],
-    "src": "32:697:5"
+    "src": "32:752:5"
   },
   "legacyAST": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/registry/IOrgRegistry.sol",
     "exportedSymbols": {
-      "IOrgRegistry": [817]
+      "IOrgRegistry": [
+        817
+      ]
     },
     "id": 818,
     "license": "CC0",
@@ -949,13 +963,21 @@
     "nodes": [
       {
         "id": 759,
-        "literals": ["solidity", "^", "0.6", ".9"],
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".9"
+        ],
         "nodeType": "PragmaDirective",
         "src": "32:23:5"
       },
       {
         "id": 760,
-        "literals": ["experimental", "ABIEncoderV2"],
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
         "nodeType": "PragmaDirective",
         "src": "56:33:5"
       },
@@ -967,7 +989,9 @@
         "documentation": null,
         "fullyImplemented": false,
         "id": 817,
-        "linearizedBaseContracts": [817],
+        "linearizedBaseContracts": [
+          817
+        ],
         "name": "IOrgRegistry",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -1456,7 +1480,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 799,
-                  "src": "538:4:5",
+                  "src": "538:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1465,9 +1489,9 @@
                   },
                   "typeName": {
                     "id": 796,
-                    "name": "uint",
+                    "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "538:4:5",
+                    "src": "538:7:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1477,10 +1501,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "537:6:5"
+              "src": "537:9:5"
             },
             "scope": 817,
-            "src": "492:52:5",
+            "src": "492:55:5",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -1508,7 +1532,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 816,
-                  "src": "566:7:5",
+                  "src": "569:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1519,7 +1543,7 @@
                     "id": 800,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "566:7:5",
+                    "src": "569:7:5",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1530,7 +1554,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "565:9:5"
+              "src": "568:9:5"
             },
             "returnParameters": {
               "id": 815,
@@ -1544,7 +1568,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 816,
-                  "src": "607:7:5",
+                  "src": "638:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1555,7 +1579,7 @@
                     "id": 803,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "607:7:5",
+                    "src": "638:7:5",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1573,7 +1597,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 816,
-                  "src": "624:7:5",
+                  "src": "659:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1584,7 +1608,7 @@
                     "id": 805,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "624:7:5",
+                    "src": "659:7:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1601,7 +1625,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 816,
-                  "src": "641:12:5",
+                  "src": "680:12:5",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1612,7 +1636,7 @@
                     "id": 807,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "641:5:5",
+                    "src": "680:5:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1629,7 +1653,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 816,
-                  "src": "663:12:5",
+                  "src": "706:12:5",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1640,7 +1664,7 @@
                     "id": 809,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "663:5:5",
+                    "src": "706:5:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1657,7 +1681,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 816,
-                  "src": "685:12:5",
+                  "src": "732:12:5",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1668,7 +1692,7 @@
                     "id": 811,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "685:5:5",
+                    "src": "732:5:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1685,7 +1709,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 816,
-                  "src": "707:12:5",
+                  "src": "758:12:5",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1696,7 +1720,7 @@
                     "id": 813,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "707:5:5",
+                    "src": "758:5:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1706,28 +1730,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "597:128:5"
+              "src": "624:156:5"
             },
             "scope": 817,
-            "src": "550:176:5",
+            "src": "553:228:5",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
         "scope": 818,
-        "src": "91:637:5"
+        "src": "91:692:5"
       }
     ],
-    "src": "32:697:5"
+    "src": "32:752:5"
   },
   "compiler": {
     "name": "solc",
     "version": "0.6.9+commit.3e3065ac.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.3.2",
-  "updatedAt": "2020-11-09T05:44:19.412Z",
+  "schemaVersion": "3.2.2",
+  "updatedAt": "2020-11-09T11:17:31.092Z",
   "devdoc": {
     "methods": {}
   },

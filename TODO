@@ -1,0 +1,5 @@
+- configure `postinstall.js` script to generate types on-the-fly
+
+- package modules as exports proper
+
+- configure external provider services
