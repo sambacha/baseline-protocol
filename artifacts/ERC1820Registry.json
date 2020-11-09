@@ -226,12 +226,8 @@
   "ast": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/registry/lib/ERC1820Registry.sol",
     "exportedSymbols": {
-      "ERC1820ImplementerInterface": [
-        1510
-      ],
-      "ERC1820Registry": [
-        1957
-      ]
+      "ERC1820ImplementerInterface": [1510],
+      "ERC1820Registry": [1957]
     },
     "id": 1958,
     "license": "MIT",
@@ -239,12 +235,7 @@
     "nodes": [
       {
         "id": 1498,
-        "literals": [
-          "solidity",
-          "^",
-          "0.6",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.6", ".9"],
         "nodeType": "PragmaDirective",
         "src": "2691:23:9"
       },
@@ -261,9 +252,7 @@
         },
         "fullyImplemented": false,
         "id": 1510,
-        "linearizedBaseContracts": [
-          1510
-        ],
+        "linearizedBaseContracts": [1510],
         "name": "ERC1820ImplementerInterface",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -405,9 +394,7 @@
         },
         "fullyImplemented": true,
         "id": 1957,
-        "linearizedBaseContracts": [
-          1957
-        ],
+        "linearizedBaseContracts": [1957],
         "name": "ERC1820Registry",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -1049,9 +1036,7 @@
               "src": "5745:338:9",
               "statements": [
                 {
-                  "assignments": [
-                    1574
-                  ],
+                  "assignments": [1574],
                   "declarations": [
                     {
                       "constant": false,
@@ -1302,9 +1287,7 @@
                     "src": "5859:169:9",
                     "statements": [
                       {
-                        "assignments": [
-                          1590
-                        ],
+                        "assignments": [1590],
                         "declarations": [
                           {
                             "constant": false,
@@ -1771,9 +1754,7 @@
               "src": "6832:682:9",
               "statements": [
                 {
-                  "assignments": [
-                    1627
-                  ],
+                  "assignments": [1627],
                   "declarations": [
                     {
                       "constant": false,
@@ -2098,10 +2079,7 @@
                       "id": 1639,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "6907:7:9",
                       "typeDescriptions": {
@@ -2231,10 +2209,7 @@
                       "id": 1649,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "6976:7:9",
                       "typeDescriptions": {
@@ -2638,10 +2613,7 @@
                             "id": 1668,
                             "name": "require",
                             "nodeType": "Identifier",
-                            "overloadedDeclarations": [
-                              -18,
-                              -18
-                            ],
+                            "overloadedDeclarations": [-18, -18],
                             "referencedDeclaration": -18,
                             "src": "7135:7:9",
                             "typeDescriptions": {
@@ -3122,10 +3094,7 @@
                       "id": 1706,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "7913:7:9",
                       "typeDescriptions": {
@@ -4889,9 +4858,7 @@
               "src": "10835:509:9",
               "statements": [
                 {
-                  "assignments": [
-                    1855
-                  ],
+                  "assignments": [1855],
                   "declarations": [
                     {
                       "constant": false,
@@ -4928,9 +4895,7 @@
                   "src": "10845:15:9"
                 },
                 {
-                  "assignments": [
-                    1858
-                  ],
+                  "assignments": [1858],
                   "declarations": [
                     {
                       "constant": false,
@@ -6166,9 +6131,7 @@
               "src": "12014:936:9",
               "statements": [
                 {
-                  "assignments": [
-                    1951
-                  ],
+                  "assignments": [1951],
                   "declarations": [
                     {
                       "constant": false,
@@ -6606,12 +6569,8 @@
   "legacyAST": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/registry/lib/ERC1820Registry.sol",
     "exportedSymbols": {
-      "ERC1820ImplementerInterface": [
-        1510
-      ],
-      "ERC1820Registry": [
-        1957
-      ]
+      "ERC1820ImplementerInterface": [1510],
+      "ERC1820Registry": [1957]
     },
     "id": 1958,
     "license": "MIT",
@@ -6619,12 +6578,7 @@
     "nodes": [
       {
         "id": 1498,
-        "literals": [
-          "solidity",
-          "^",
-          "0.6",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.6", ".9"],
         "nodeType": "PragmaDirective",
         "src": "2691:23:9"
       },
@@ -6641,9 +6595,7 @@
         },
         "fullyImplemented": false,
         "id": 1510,
-        "linearizedBaseContracts": [
-          1510
-        ],
+        "linearizedBaseContracts": [1510],
         "name": "ERC1820ImplementerInterface",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -6785,9 +6737,7 @@
         },
         "fullyImplemented": true,
         "id": 1957,
-        "linearizedBaseContracts": [
-          1957
-        ],
+        "linearizedBaseContracts": [1957],
         "name": "ERC1820Registry",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -7429,9 +7379,7 @@
               "src": "5745:338:9",
               "statements": [
                 {
-                  "assignments": [
-                    1574
-                  ],
+                  "assignments": [1574],
                   "declarations": [
                     {
                       "constant": false,
@@ -7682,9 +7630,7 @@
                     "src": "5859:169:9",
                     "statements": [
                       {
-                        "assignments": [
-                          1590
-                        ],
+                        "assignments": [1590],
                         "declarations": [
                           {
                             "constant": false,
@@ -8151,9 +8097,7 @@
               "src": "6832:682:9",
               "statements": [
                 {
-                  "assignments": [
-                    1627
-                  ],
+                  "assignments": [1627],
                   "declarations": [
                     {
                       "constant": false,
@@ -8478,10 +8422,7 @@
                       "id": 1639,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "6907:7:9",
                       "typeDescriptions": {
@@ -8611,10 +8552,7 @@
                       "id": 1649,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "6976:7:9",
                       "typeDescriptions": {
@@ -9018,10 +8956,7 @@
                             "id": 1668,
                             "name": "require",
                             "nodeType": "Identifier",
-                            "overloadedDeclarations": [
-                              -18,
-                              -18
-                            ],
+                            "overloadedDeclarations": [-18, -18],
                             "referencedDeclaration": -18,
                             "src": "7135:7:9",
                             "typeDescriptions": {
@@ -9502,10 +9437,7 @@
                       "id": 1706,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "7913:7:9",
                       "typeDescriptions": {
@@ -11269,9 +11201,7 @@
               "src": "10835:509:9",
               "statements": [
                 {
-                  "assignments": [
-                    1855
-                  ],
+                  "assignments": [1855],
                   "declarations": [
                     {
                       "constant": false,
@@ -11308,9 +11238,7 @@
                   "src": "10845:15:9"
                 },
                 {
-                  "assignments": [
-                    1858
-                  ],
+                  "assignments": [1858],
                   "declarations": [
                     {
                       "constant": false,
@@ -12546,9 +12474,7 @@
               "src": "12014:936:9",
               "statements": [
                 {
-                  "assignments": [
-                    1951
-                  ],
+                  "assignments": [1951],
                   "declarations": [
                     {
                       "constant": false,

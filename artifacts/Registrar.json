@@ -61,9 +61,7 @@
   "ast": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/registry/Registrar.sol",
     "exportedSymbols": {
-      "Registrar": [
-        1468
-      ]
+      "Registrar": [1468]
     },
     "id": 1469,
     "license": "CC0",
@@ -71,12 +69,7 @@
     "nodes": [
       {
         "id": 1341,
-        "literals": [
-          "solidity",
-          "^",
-          "0.6",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.6", ".9"],
         "nodeType": "PragmaDirective",
         "src": "32:23:7"
       },
@@ -104,9 +97,7 @@
         },
         "fullyImplemented": true,
         "id": 1468,
-        "linearizedBaseContracts": [
-          1468
-        ],
+        "linearizedBaseContracts": [1468],
         "name": "Registrar",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -397,10 +388,7 @@
                       "id": 1356,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "459:7:7",
                       "typeDescriptions": {
@@ -613,9 +601,7 @@
               "src": "1667:181:7",
               "statements": [
                 {
-                  "assignments": [
-                    1389
-                  ],
+                  "assignments": [1389],
                   "declarations": [
                     {
                       "constant": false,
@@ -1004,9 +990,7 @@
               "src": "2180:162:7",
               "statements": [
                 {
-                  "assignments": [
-                    1420
-                  ],
+                  "assignments": [1420],
                   "declarations": [
                     {
                       "constant": false,
@@ -1760,9 +1744,7 @@
   "legacyAST": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/registry/Registrar.sol",
     "exportedSymbols": {
-      "Registrar": [
-        1468
-      ]
+      "Registrar": [1468]
     },
     "id": 1469,
     "license": "CC0",
@@ -1770,12 +1752,7 @@
     "nodes": [
       {
         "id": 1341,
-        "literals": [
-          "solidity",
-          "^",
-          "0.6",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.6", ".9"],
         "nodeType": "PragmaDirective",
         "src": "32:23:7"
       },
@@ -1803,9 +1780,7 @@
         },
         "fullyImplemented": true,
         "id": 1468,
-        "linearizedBaseContracts": [
-          1468
-        ],
+        "linearizedBaseContracts": [1468],
         "name": "Registrar",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -2096,10 +2071,7 @@
                       "id": 1356,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "459:7:7",
                       "typeDescriptions": {
@@ -2312,9 +2284,7 @@
               "src": "1667:181:7",
               "statements": [
                 {
-                  "assignments": [
-                    1389
-                  ],
+                  "assignments": [1389],
                   "declarations": [
                     {
                       "constant": false,
@@ -2703,9 +2673,7 @@
               "src": "2180:162:7",
               "statements": [
                 {
-                  "assignments": [
-                    1420
-                  ],
+                  "assignments": [1420],
                   "declarations": [
                     {
                       "constant": false,

@@ -37,9 +37,7 @@
   "ast": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/privacy/lib/VerifierNoop.sol",
     "exportedSymbols": {
-      "VerifierNoop": [
-        757
-      ]
+      "VerifierNoop": [757]
     },
     "id": 758,
     "license": "CC0",
@@ -47,12 +45,7 @@
     "nodes": [
       {
         "id": 724,
-        "literals": [
-          "solidity",
-          "^",
-          "0.6",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.6", ".9"],
         "nodeType": "PragmaDirective",
         "src": "32:23:4"
       },
@@ -64,9 +57,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 757,
-        "linearizedBaseContracts": [
-          757
-        ],
+        "linearizedBaseContracts": [757],
         "name": "VerifierNoop",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -195,10 +186,7 @@
                       "id": 735,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "333:7:4",
                       "typeDescriptions": {
@@ -344,10 +332,7 @@
                       "id": 744,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "388:7:4",
                       "typeDescriptions": {
@@ -543,9 +528,7 @@
   "legacyAST": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/privacy/lib/VerifierNoop.sol",
     "exportedSymbols": {
-      "VerifierNoop": [
-        757
-      ]
+      "VerifierNoop": [757]
     },
     "id": 758,
     "license": "CC0",
@@ -553,12 +536,7 @@
     "nodes": [
       {
         "id": 724,
-        "literals": [
-          "solidity",
-          "^",
-          "0.6",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.6", ".9"],
         "nodeType": "PragmaDirective",
         "src": "32:23:4"
       },
@@ -570,9 +548,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 757,
-        "linearizedBaseContracts": [
-          757
-        ],
+        "linearizedBaseContracts": [757],
         "name": "VerifierNoop",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -701,10 +677,7 @@
                       "id": 735,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "333:7:4",
                       "typeDescriptions": {
@@ -850,10 +823,7 @@
                       "id": 744,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "388:7:4",
                       "typeDescriptions": {

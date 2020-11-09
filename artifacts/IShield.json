@@ -55,9 +55,7 @@
   "ast": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/privacy/IShield.sol",
     "exportedSymbols": {
-      "IShield": [
-        20
-      ]
+      "IShield": [20]
     },
     "id": 21,
     "license": "CC0",
@@ -65,12 +63,7 @@
     "nodes": [
       {
         "id": 1,
-        "literals": [
-          "solidity",
-          "^",
-          "0.6",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.6", ".9"],
         "nodeType": "PragmaDirective",
         "src": "32:23:0"
       },
@@ -82,9 +75,7 @@
         "documentation": null,
         "fullyImplemented": false,
         "id": 20,
-        "linearizedBaseContracts": [
-          20
-        ],
+        "linearizedBaseContracts": [20],
         "name": "IShield",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -320,9 +311,7 @@
   "legacyAST": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/privacy/IShield.sol",
     "exportedSymbols": {
-      "IShield": [
-        20
-      ]
+      "IShield": [20]
     },
     "id": 21,
     "license": "CC0",
@@ -330,12 +319,7 @@
     "nodes": [
       {
         "id": 1,
-        "literals": [
-          "solidity",
-          "^",
-          "0.6",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.6", ".9"],
         "nodeType": "PragmaDirective",
         "src": "32:23:0"
       },
@@ -347,9 +331,7 @@
         "documentation": null,
         "fullyImplemented": false,
         "id": 20,
-        "linearizedBaseContracts": [
-          20
-        ],
+        "linearizedBaseContracts": [20],
         "name": "IShield",
         "nodeType": "ContractDefinition",
         "nodes": [

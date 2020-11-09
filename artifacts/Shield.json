@@ -236,9 +236,7 @@
   "ast": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/privacy/Shield.sol",
     "exportedSymbols": {
-      "Shield": [
-        110
-      ]
+      "Shield": [110]
     },
     "id": 111,
     "license": "CC0",
@@ -246,12 +244,7 @@
     "nodes": [
       {
         "id": 37,
-        "literals": [
-          "solidity",
-          "^",
-          "0.6",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.6", ".9"],
         "nodeType": "PragmaDirective",
         "src": "32:23:2"
       },
@@ -328,19 +321,12 @@
             "src": "173:16:2"
           }
         ],
-        "contractDependencies": [
-          20,
-          722
-        ],
+        "contractDependencies": [20, 722],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
         "id": 110,
-        "linearizedBaseContracts": [
-          110,
-          722,
-          20
-        ],
+        "linearizedBaseContracts": [110, 722, 20],
         "name": "Shield",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -584,9 +570,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              6
-            ],
+            "baseFunctions": [6],
             "body": {
               "id": 74,
               "nodeType": "Block",
@@ -724,18 +708,14 @@
             "visibility": "external"
           },
           {
-            "baseFunctions": [
-              19
-            ],
+            "baseFunctions": [19],
             "body": {
               "id": 108,
               "nodeType": "Block",
               "src": "830:337:2",
               "statements": [
                 {
-                  "assignments": [
-                    90
-                  ],
+                  "assignments": [90],
                   "declarations": [
                     {
                       "constant": false,
@@ -903,10 +883,7 @@
                       "id": 97,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "931:7:2",
                       "typeDescriptions": {
@@ -1190,9 +1167,7 @@
   "legacyAST": {
     "absolutePath": "/Users/sbacha/baseline-workspace/contracts/node_modules/@baseline-protocol/contracts/contracts/privacy/Shield.sol",
     "exportedSymbols": {
-      "Shield": [
-        110
-      ]
+      "Shield": [110]
     },
     "id": 111,
     "license": "CC0",
@@ -1200,12 +1175,7 @@
     "nodes": [
       {
         "id": 37,
-        "literals": [
-          "solidity",
-          "^",
-          "0.6",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.6", ".9"],
         "nodeType": "PragmaDirective",
         "src": "32:23:2"
       },
@@ -1282,19 +1252,12 @@
             "src": "173:16:2"
           }
         ],
-        "contractDependencies": [
-          20,
-          722
-        ],
+        "contractDependencies": [20, 722],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
         "id": 110,
-        "linearizedBaseContracts": [
-          110,
-          722,
-          20
-        ],
+        "linearizedBaseContracts": [110, 722, 20],
         "name": "Shield",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -1538,9 +1501,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              6
-            ],
+            "baseFunctions": [6],
             "body": {
               "id": 74,
               "nodeType": "Block",
@@ -1678,18 +1639,14 @@
             "visibility": "external"
           },
           {
-            "baseFunctions": [
-              19
-            ],
+            "baseFunctions": [19],
             "body": {
               "id": 108,
               "nodeType": "Block",
               "src": "830:337:2",
               "statements": [
                 {
-                  "assignments": [
-                    90
-                  ],
+                  "assignments": [90],
                   "declarations": [
                     {
                       "constant": false,
@@ -1857,10 +1814,7 @@
                       "id": 97,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "931:7:2",
                       "typeDescriptions": {
